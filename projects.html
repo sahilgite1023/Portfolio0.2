@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects Lab — Sahil Gite Portfolio</title>
+  <meta name="description" content="Explore full-stack and backend projects engineered by Sahil Gite, including CareerNova Job Portal and Employee Attendance System.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220%22%20%220%22%20%22100%22%20%22100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+</head>
+<body>
+
+  <!-- Top System & Ticker Utility Bar -->
+  <aside class="top-system-bar" aria-label="System status bar">
+    <div class="system-ticker-marquee">
+      <div class="system-ticker-item">
+        <span class="pulse-dot"></span> <span>SYS.PAGE: [03] PROJECTS.SYS</span>
+      </div>
+      <div class="system-ticker-item">
+        <span>💼 PRODUCTION BUILDS: CAREERNOVA • ATTENDANCE SYSTEM</span>
+      </div>
+      <div class="system-ticker-item">
+        <span>☁️ CLOUD DEPLOYMENTS: RENDER • NETLIFY • DIGITALOCEAN • AWS S3</span>
+      </div>
+      <div class="system-ticker-item">
+        <span>⚡ ARCHITECTURE: RESTFUL APIS, JWT AUTH, SQL &amp; MONGODB</span>
+      </div>
+      <div class="system-ticker-item">
+        <span class="pulse-dot"></span> <span>SYS.PAGE: [03] PROJECTS.SYS</span>
+      </div>
+    </div>
+
+    <div class="system-actions">
+      <span id="liveClock" style="font-weight:700; color:var(--accent-yellow);">13:20:00 IST</span>
+      <button class="system-btn" id="audioToggleBtn" title="Toggle cute sound effects">
+        <span>🔇</span> SOUND: OFF
+      </button>
+      <button class="system-btn" id="themeToggleBtn" title="Switch theme">
+        <span>🎨</span> ☀️ LIGHT
+      </button>
+    </div>
+  </aside>
+
+  <!-- Main Swiss Header Navigation -->
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="index.html" class="brand-badge" id="brandLogo">
+        <span>SAHIL GITE</span>
+        <span class="brand-stamp">DEV.01</span>
+      </a>
+
+      <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle navigation menu">
+        ☰ MENU
+      </button>
+
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">
+              <span class="nav-idx">[01]</span>
+              <span>OVERVIEW</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">
+              <span class="nav-idx">[02]</span>
+              <span>ABOUT &amp; EXP</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="projects.html" class="nav-link active">
+              <span class="nav-idx">[03]</span>
+              <span>PROJECTS</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="achievements.html" class="nav-link">
+              <span class="nav-idx">[04]</span>
+              <span>ACHIEVEMENTS</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">
+              <span class="nav-idx">[05]</span>
+              <span>CONTACT</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="nav-cta">
+        <a href="contact.html" class="cta-button">
+          <span>(◕‿◕)</span> HIRE ME
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Projects Page Content -->
+  <main>
+    <section class="section-spacing">
+      <div class="container">
+        
+        <!-- Header & Category Filter Controls -->
+        <div class="section-header">
+          <div>
+            <div class="section-label">
+              <span>[03.A]</span> SELECTED WORKS &amp; SYSTEMS
+            </div>
+            <h1 class="section-title">PROJECTS LAB</h1>
+          </div>
+          <div class="section-meta-tag">
+            VERIFIED PRODUCTION &amp; RESEARCH BUILDS
+          </div>
+        </div>
+
+        <!-- Filter Buttons Bar -->
+        <div style="display:flex; flex-wrap:wrap; gap:12px; margin-bottom:36px; padding:12px; background:var(--bg-secondary); border:var(--border-width) solid var(--border-color); box-shadow:var(--hard-shadow-sm);">
+          <span style="font-family:var(--font-mono); font-weight:800; font-size:0.85rem; align-self:center; margin-right:8px;">FILTER STACK:</span>
+          <button class="btn-card project-filter-btn active" data-filter="all" style="background:var(--accent-yellow);">
+            <span>⚡ ALL PROJECTS [04]</span>
+          </button>
+          <button class="btn-card project-filter-btn" data-filter="fullstack">
+            <span>🌐 FULL STACK [02]</span>
+          </button>
+          <button class="btn-card project-filter-btn" data-filter="backend">
+            <span>🗄️ BACKEND &amp; CLOUD [02]</span>
+          </button>
+          <button class="btn-card project-filter-btn" data-filter="ai">
+            <span>🤖 AI &amp; DATA [01]</span>
+          </button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+          
+          <!-- PROJECT 01: CAREERNOVA -->
+          <article class="project-card" data-category="fullstack" id="careernova">
+            <div class="card-header-bar">
+              <div class="window-dots">
+                <span class="window-dot red"></span>
+                <span class="window-dot yellow"></span>
+                <span class="window-dot green"></span>
+              </div>
+              <span>PROJECT // 001 • FULL STACK</span>
+            </div>
+
+            <div class="project-thumbnail">
+              <span class="project-category-tag">LIVE DEMO AVAILABLE</span>
+              <img src="assets/images/project_careernova.jpg" alt="CareerNova Job Portal UI Screenshot" width="800" height="450">
+            </div>
+
+            <div class="project-content">
+              <div class="project-title">
+                <span>CareerNova — Job Portal Platform</span>
+                <span style="font-size:1.15rem;">🚀</span>
+              </div>
+              <div class="project-role">Full Stack Developer | Live Demo &amp; Cloud Deployment</div>
+
+              <p class="project-desc">
+                CareerNova is an enterprise-grade job discovery and hiring hub engineered to eliminate friction between applicants and recruiters. Built with React on the client and Express/Node.js on the backend, it features fine-grained JWT role permissions, resume uploads directly piped to AWS S3 buckets, and an administrator management portal.
+              </p>
+
+              <div style="background:var(--bg-secondary); border:1.5px solid var(--border-color); padding:16px; margin-bottom:18px;">
+                <div style="font-family:var(--font-mono); font-size:0.8rem; font-weight:800; margin-bottom:8px; color:var(--accent-pink);">
+                  KEY ARCHITECTURAL HIGHLIGHTS:
+                </div>
+                <ul class="project-feature-list">
+                  <li class="project-feature-item">
+                    <strong>Full-Stack Job Portal:</strong> Complete candidate portal with application tracking and real-time status updates.
+                  </li>
+                  <li class="project-feature-item">
+                    <strong>AWS S3 Resume Pipeline:</strong> Integrated Multer with AWS SDK to securely stream PDF/DOCX resumes to AWS S3.
+                  </li>
+                  <li class="project-feature-item">
+                    <strong>JWT Security:</strong> Stateless HTTP-only token auth with cryptographic password hashing (Bcrypt).
+                  </li>
+                  <li class="project-feature-item">
+                    <strong>Production DevOps:</strong> Backend orchestrated on Render, frontend deployed on Netlify CDN with automated CI.
+                  </li>
+                </ul>
+              </div>
+
+              <div class="project-tech-tags">
+                <span class="tech-tag" style="background:var(--accent-yellow-light);">React</span>
+                <span class="tech-tag" style="background:var(--accent-mint-light);">Node.js</span>
+                <span class="tech-tag" style="background:var(--accent-pink-light);">Express.js</span>
+                <span class="tech-tag" style="background:var(--accent-purple-light);">MongoDB</span>
+                <span class="tech-tag">JWT</span>
+                <span class="tech-tag">Multer</span>
+                <span class="tech-tag" style="background:var(--accent-orange-light);">AWS S3</span>
+                <span class="tech-tag">Render</span>
+                <span class="tech-tag">Netlify</span>
+              </div>
+
+              <div class="project-actions">
+                <button class="btn-card highlight" onclick="openArchModal('careernova')">
+                  <span>📐</span> VIEW ARCHITECTURE
+                </button>
+                <button class="btn-card" onclick="window.copyText('https://github.com/sahilgite', 'CareerNova GitHub Link')">
+                  <span>📂</span> GITHUB REPO
+                </button>
+                <button class="btn-card" onclick="window.copyText('https://careernova-demo.netlify.app', 'CareerNova Live Demo Link')">
+                  <span>🔗</span> LIVE DEMO
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 02: EMPLOYEE ATTENDANCE SYSTEM -->
+          <article class="project-card" data-category="backend fullstack" id="attendance">
+            <div class="card-header-bar">
+              <div class="window-dots">
+                <span class="window-dot red"></span>
+                <span class="window-dot yellow"></span>
+                <span class="window-dot green"></span>
+              </div>
+              <span>PROJECT // 002 • BACKEND &amp; CLOUD</span>
+            </div>
+
+            <div class="project-thumbnail">
+              <span class="project-category-tag">DEPLOYED ON DIGITALOCEAN</span>
+              <img src="assets/images/project_attendance.jpg" alt="Employee Attendance System Dashboard UI Screenshot" width="800" height="450">
+            </div>
+
+            <div class="project-content">
+              <div class="project-title">
+                <span>Employee Attendance &amp; Leave System</span>
+                <span style="font-size:1.15rem;">⏱️</span>
+              </div>
+              <div class="project-role">Backend Developer | Live Demo &amp; Cloud Deployment</div>
+
+              <p class="project-desc">
+                High-concurrency employee timekeeping, punch-in/out logging, and multi-tier leave approval engine. Powered by Node.js and structured SQL database schemas with normalized relationships to ensure strict data consistency and audit trails.
+              </p>
+
+              <div style="background:var(--bg-secondary); border:1.5px solid var(--border-color); padding:16px; margin-bottom:18px;">
+                <div style="font-family:var(--font-mono); font-size:0.8rem; font-weight:800; margin-bottom:8px; color:var(--accent-pink);">
+                  KEY ARCHITECTURAL HIGHLIGHTS:
+                </div>
+                <ul class="project-feature-list">
+                  <li class="project-feature-item">
+                    <strong>Role-Based Access Control (RBAC):</strong> Tailored dashboards for Employees, Team Managers, and HR Admins.
+                  </li>
+                  <li class="project-feature-item">
+                    <strong>Leave Approval Workflows:</strong> Automated leave balance deduction, sick leave quota, and manager approvals.
+                  </li>
+                  <li class="project-feature-item">
+                    <strong>Optimized SQL Schema:</strong> Normalized database tables with indexed timestamps for zero-lag reporting.
+                  </li>
+                  <li class="project-feature-item">
+                    <strong>DigitalOcean Cloud Host:</strong> Configured Linux VM droplet, PM2 process manager, and Nginx reverse proxy.
+                  </li>
+                </ul>
+              </div>
+
+              <div class="project-tech-tags">
+                <span class="tech-tag" style="background:var(--accent-mint-light);">Node.js</span>
+                <span class="tech-tag" style="background:var(--accent-orange-light);">SQL / MySQL</span>
+                <span class="tech-tag">Express.js</span>
+                <span class="tech-tag" style="background:var(--accent-cyan-light);">Tailwind CSS</span>
+                <span class="tech-tag" style="background:var(--accent-purple-light);">DigitalOcean</span>
+                <span class="tech-tag">REST APIs</span>
+              </div>
+
+              <div class="project-actions">
+                <button class="btn-card highlight" onclick="openArchModal('attendance')">
+                  <span>📐</span> VIEW ARCHITECTURE
+                </button>
+                <button class="btn-card" onclick="window.copyText('https://github.com/sahilgite', 'Attendance System GitHub Link')">
+                  <span>📂</span> GITHUB REPO
+                </button>
+                <button class="btn-card" onclick="window.copyText('https://digitalocean.com', 'Live Deployment Link')">
+                  <span>🔗</span> LIVE DEMO
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 03: ASCEND 2K26 HACKATHON PLATFORM -->
+          <article class="project-card" data-category="fullstack backend" id="ascend">
+            <div class="card-header-bar">
+              <div class="window-dots">
+                <span class="window-dot red"></span>
+                <span class="window-dot yellow"></span>
+                <span class="window-dot green"></span>
+              </div>
+              <span>PROJECT // 003 • EVENT PLATFORM</span>
+            </div>
+
+            <div class="project-thumbnail" style="display:flex; align-items:center; justify-content:center; background:var(--accent-yellow-light);">
+              <div style="text-align:center; padding:30px;">
+                <div style="font-size:3.5rem; margin-bottom:8px;">🏆 ⚡</div>
+                <div style="font-family:var(--font-display); font-weight:800; font-size:1.6rem;">ASCEND 2K26 PLATFORM</div>
+                <div style="font-family:var(--font-mono); font-size:0.85rem; color:var(--ink-secondary);">CO-HEAD &amp; LEAD DEVELOPER @ KKWIEER</div>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <div class="project-title">
+                <span>ASCEND 2K26 Mini Hackathon Portal</span>
+                <span style="font-size:1.15rem;">🎖️</span>
+              </div>
+              <div class="project-role">Co-Head &amp; Full Stack Lead | KKWIEER Nashik</div>
+
+              <p class="project-desc">
+                Event coordination and live hackathon operations portal built for ASCEND 2K26. Handled team registrations, problem statement dispatches, submission intake, and live scoring leaderboard.
+              </p>
+
+              <div class="project-tech-tags">
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Express</span>
+                <span class="tech-tag">Tailwind CSS</span>
+                <span class="tech-tag">REST APIs</span>
+              </div>
+
+              <div class="project-actions">
+                <button class="btn-card highlight" onclick="window.copyText('Co-Head ASCEND 2K26 Hackathon @ KKWIEER', 'Achievement Info')">
+                  <span>✨</span> LEADERSHIP BRIEF
+                </button>
+                <a href="achievements.html" class="btn-card">
+                  <span>🏆</span> SEE AWARDS
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 04: NASA SPACE APPS DATA EXPLORER -->
+          <article class="project-card" data-category="ai" id="spaceapps">
+            <div class="card-header-bar">
+              <div class="window-dots">
+                <span class="window-dot red"></span>
+                <span class="window-dot yellow"></span>
+                <span class="window-dot green"></span>
+              </div>
+              <span>PROJECT // 004 • AI &amp; SPACE DATA</span>
+            </div>
+
+            <div class="project-thumbnail" style="display:flex; align-items:center; justify-content:center; background:var(--accent-purple-light);">
+              <div style="text-align:center; padding:30px;">
+                <div style="font-size:3.5rem; margin-bottom:8px;">🚀 🌌</div>
+                <div style="font-family:var(--font-display); font-weight:800; font-size:1.6rem;">NASA SPACE APPS SUITE</div>
+                <div style="font-family:var(--font-mono); font-size:0.85rem; color:var(--ink-secondary);">3x HACKATHON PARTICIPANT (2022, 2024, 2025)</div>
+              </div>
+            </div>
+
+            <div class="project-content">
+              <div class="project-title">
+                <span>NASA Space Apps Telemetry Explorer</span>
+                <span style="font-size:1.15rem;">🪐</span>
+              </div>
+              <div class="project-role">AI / Data Engineering &amp; Visual Analytics</div>
+
+              <p class="project-desc">
+                Developed solutions using open-source NASA earth and planetary datasets across three separate NASA Space Apps challenges. Implemented Python data cleaning, pattern modeling, and reactive frontend visualization.
+              </p>
+
+              <div class="project-tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Data Analysis</span>
+                <span class="tech-tag">NASA Open APIs</span>
+                <span class="tech-tag">Visualization</span>
+              </div>
+
+              <div class="project-actions">
+                <button class="btn-card highlight" onclick="window.copyText('NASA Space Apps Challenge Participant (2022, 2024, 2025)', 'NASA Honor')">
+                  <span>🛸</span> NASA CHALLENGE BRIEF
+                </button>
+                <a href="achievements.html" class="btn-card">
+                  <span>🏆</span> SEE HACKATHONS
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ARCHITECTURE MODAL COMPONENT -->
+    <div class="brutal-modal-backdrop" id="archModalBackdrop" onclick="closeArchModal(event)">
+      <div class="brutal-modal-card" onclick="event.stopPropagation()">
+        <div class="card-header-bar">
+          <div class="window-dots">
+            <span class="window-dot red"></span>
+            <span class="window-dot yellow"></span>
+            <span class="window-dot green"></span>
+          </div>
+          <span id="modalHeaderTitle">SYSTEM ARCHITECTURE BREAKDOWN</span>
+          <button style="background:none; border:none; cursor:pointer; font-weight:bold; font-size:1.1rem;" onclick="closeArchModal()">✕</button>
+        </div>
+
+        <div style="padding:28px;" id="modalBodyContent">
+          <!-- Injected via JavaScript -->
+        </div>
+
+        <div style="padding:16px 28px; background:var(--bg-secondary); border-top:2px solid var(--border-color); text-align:right;">
+          <button class="btn-primary" onclick="closeArchModal()">
+            <span>✔</span> CLOSE INSPECTOR
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Interactive Sticker Tray Overlay -->
+  <div class="sticker-palette-tray" aria-label="Cute Sticker Palette">
+    <span class="sticker-tray-title">STAMP CUTE:</span>
+    <button class="tray-sticker-btn" data-emoji="⭐" title="Star Sticker">⭐</button>
+    <button class="tray-sticker-btn" data-emoji="💖" title="Heart Sticker">💖</button>
+    <button class="tray-sticker-btn" data-emoji="⚡" title="Lightning Sticker">⚡</button>
+    <button class="tray-sticker-btn" data-emoji="☕" title="Coffee/Chai Sticker">☕</button>
+    <button class="tray-sticker-btn" data-emoji="🚀" title="Rocket Sticker">🚀</button>
+    <button class="tray-sticker-btn" data-emoji="✨" title="Sparkle Sticker">✨</button>
+  </div>
+
+  <!-- Swiss Brutalist Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand">
+          <h3>SAHIL GITE // DEV</h3>
+          <p>
+            Computer Applications post-graduate student at KKWIEER Nashik. Focused on engineering high-impact web software with Swiss structural purity and cute neo-brutalist joy.
+          </p>
+          <div style="display:flex; gap:10px;">
+            <button class="system-btn" onclick="window.copyText('sahilgite511@gmail.com', 'Email')">
+              <span>📧</span> sahilgite511@gmail.com
+            </button>
+            <button class="system-btn" onclick="window.copyText('+919373782446', 'Phone')">
+              <span>📱</span> +91 9373782446
+            </button>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>PAGES</h4>
+          <ul class="footer-nav-list">
+            <li><a href="index.html">[01] Overview (Home)</a></li>
+            <li><a href="about.html">[02] About &amp; Experience</a></li>
+            <li><a href="projects.html">[03] Projects Lab</a></li>
+            <li><a href="achievements.html">[04] Achievements &amp; Awards</a></li>
+            <li><a href="contact.html">[05] Contact &amp; Connect</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>TECH ARSENAL</h4>
+          <ul class="footer-nav-list">
+            <li><span>• React.js &amp; Tailwind</span></li>
+            <li><span>• Node.js &amp; Express.js</span></li>
+            <li><span>• MongoDB &amp; MySQL</span></li>
+            <li><span>• Python &amp; AI Fundamentals</span></li>
+            <li><span>• AWS S3 &amp; Render Cloud</span></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>CONNECT</h4>
+          <ul class="footer-nav-list">
+            <li><a href="https://github.com" target="_blank" rel="noopener">GitHub Profile ↗</a></li>
+            <li><a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn Network ↗</a></li>
+            <li><a href="mailto:sahilgite511@gmail.com">Direct Email ↗</a></li>
+            <li><a href="tel:+919373782446">Direct Call ↗</a></li>
+            <li><a href="contact.html">Guestbook Stamp Board ↗</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div>
+          <span>© 2026 SAHIL GITE. CRAFTED WITH SWISS PRECISION &amp; NEO-BRUTALIST LOVE.</span>
+        </div>
+        <div style="display:flex; gap:16px; align-items:center;">
+          <span>NASHIK, MH [20.00°N, 73.78°E]</span>
+          <a href="#" style="text-decoration:underline;">BACK TO TOP ↑</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Architecture Modal Script
+    const ARCH_DATA = {
+      careernova: {
+        title: "CAREERNOVA — SYSTEM ARCHITECTURE SPEC",
+        content: `
+          <h3 style="font-family:var(--font-display); font-size:1.4rem; font-weight:800; margin-bottom:12px;">Architecture Data Flow</h3>
+          <div style="background:var(--bg-secondary); border:2px solid var(--border-color); padding:16px; font-family:var(--font-mono); font-size:0.85rem; line-height:1.6; margin-bottom:18px;">
+            [React Frontend (Netlify)]<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;│ (HTTPS / REST JSON)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;▼<br>
+            [Node.js + Express API Gateway (Render)]<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;├── [JWT Auth & Middleware Token Validator]<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;├── [Multer Binary Stream] ──► [AWS S3 Cloud Storage Bucket]<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;└── [Mongoose ORM] ──────────► [MongoDB Atlas Cluster]
+          </div>
+          <h4 style="font-family:var(--font-display); font-weight:700; font-size:1.1rem; margin-bottom:8px;">Security & Performance Highlights:</h4>
+          <ul style="padding-left:20px; font-size:0.95rem; line-height:1.6;">
+            <li>Stateless JSON Web Tokens with expiration limits prevent session hijacking.</li>
+            <li>Direct AWS S3 pre-signed upload pipelines prevent server RAM exhaustion during multi-megabyte resume uploads.</li>
+            <li>Cross-Origin Resource Sharing (CORS) restricted strictly to trusted Netlify frontend domains.</li>
+          </ul>
+        `
+      },
+      attendance: {
+        title: "ATTENDANCE SYSTEM — SYSTEM ARCHITECTURE SPEC",
+        content: `
+          <h3 style="font-family:var(--font-display); font-size:1.4rem; font-weight:800; margin-bottom:12px;">Relational Data & Auth Workflow</h3>
+          <div style="background:var(--bg-secondary); border:2px solid var(--border-color); padding:16px; font-family:var(--font-mono); font-size:0.85rem; line-height:1.6; margin-bottom:18px;">
+            [Client Dashboard UI (Tailwind CSS)]<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;│ (Session / Role Guard)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;▼<br>
+            [Node.js Backend Engine (DigitalOcean Droplet / PM2)]<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;├── [Role Guard: Admin / Manager / Employee]<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;├── [Clock-In / Clock-Out Realtime Validator]<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;└── [SQL Prepared Query Engine] ──► [MySQL Relational DB]
+          </div>
+          <h4 style="font-family:var(--font-display); font-weight:700; font-size:1.1rem; margin-bottom:8px;">Enterprise Reliability Features:</h4>
+          <ul style="padding-left:20px; font-size:0.95rem; line-height:1.6;">
+            <li>SQL Transactions ensure leave deductions and attendance state updates happen atomically with zero balance drift.</li>
+            <li>Role-based access rules restrict manager approvals strictly to departmental hierarchies.</li>
+            <li>Runs on a resilient DigitalOcean Droplet with automatic PM2 process recovery.</li>
+          </ul>
+        `
+      }
+    };
+
+    function openArchModal(key) {
+      const data = ARCH_DATA[key];
+      if (!data) return;
+      document.getElementById('modalHeaderTitle').textContent = data.title;
+      document.getElementById('modalBodyContent').innerHTML = data.content;
+      document.getElementById('archModalBackdrop').classList.add('open');
+    }
+
+    function closeArchModal(e) {
+      if (e && e.target !== document.getElementById('archModalBackdrop') && e.type !== 'click') return;
+      document.getElementById('archModalBackdrop').classList.remove('open');
+    }
+  </script>
+</body>
+</html>

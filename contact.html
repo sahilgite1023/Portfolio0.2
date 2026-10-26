@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact &amp; Connect — Sahil Gite Portfolio</title>
+  <meta name="description" content="Get in touch with Sahil Gite for full stack developer roles, internships, or collaborations. Based in Nashik, Maharashtra.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220%22%20%220%22%20%22100%22%20%22100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+</head>
+<body>
+
+  <!-- Top System & Ticker Utility Bar -->
+  <aside class="top-system-bar" aria-label="System status bar">
+    <div class="system-ticker-marquee">
+      <div class="system-ticker-item">
+        <span class="pulse-dot"></span> <span>SYS.PAGE: [05] CONTACT.MSG</span>
+      </div>
+      <div class="system-ticker-item">
+        <span>📧 EMAIL: SAHILGITE511@GMAIL.COM</span>
+      </div>
+      <div class="system-ticker-item">
+        <span>📱 DIRECT PHONE: +91 9373782446</span>
+      </div>
+      <div class="system-ticker-item">
+        <span>📍 LOCATION: NASHIK, MAHARASHTRA, INDIA</span>
+      </div>
+      <div class="system-ticker-item">
+        <span class="pulse-dot"></span> <span>SYS.PAGE: [05] CONTACT.MSG</span>
+      </div>
+    </div>
+
+    <div class="system-actions">
+      <span id="liveClock" style="font-weight:700; color:var(--accent-yellow);">13:20:00 IST</span>
+      <button class="system-btn" id="audioToggleBtn" title="Toggle cute sound effects">
+        <span>🔇</span> SOUND: OFF
+      </button>
+      <button class="system-btn" id="themeToggleBtn" title="Switch theme">
+        <span>🎨</span> ☀️ LIGHT
+      </button>
+    </div>
+  </aside>
+
+  <!-- Main Swiss Header Navigation -->
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="index.html" class="brand-badge" id="brandLogo">
+        <span>SAHIL GITE</span>
+        <span class="brand-stamp">DEV.01</span>
+      </a>
+
+      <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle navigation menu">
+        ☰ MENU
+      </button>
+
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">
+              <span class="nav-idx">[01]</span>
+              <span>OVERVIEW</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">
+              <span class="nav-idx">[02]</span>
+              <span>ABOUT &amp; EXP</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="projects.html" class="nav-link">
+              <span class="nav-idx">[03]</span>
+              <span>PROJECTS</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="achievements.html" class="nav-link">
+              <span class="nav-idx">[04]</span>
+              <span>ACHIEVEMENTS</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link active">
+              <span class="nav-idx">[05]</span>
+              <span>CONTACT</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="nav-cta">
+        <a href="contact.html" class="cta-button">
+          <span>(◕‿◕)</span> HIRE ME
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Contact Page Content -->
+  <main>
+    <section class="section-spacing">
+      <div class="container">
+        
+        <div class="section-header">
+          <div>
+            <div class="section-label">
+              <span>[05.A]</span> DISPATCH PROTOCOL &amp; INQUIRIES
+            </div>
+            <h1 class="section-title">LET’S BUILD SOMETHING EXTRAORDINARY</h1>
+          </div>
+          <div class="section-meta-tag">
+            RESPONSE TIME: UNDER 24 HOURS
+          </div>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Left Column: Brutalist Envelope / Dispatch Form -->
+          <div class="contact-form-box">
+            <div class="card-header-bar" style="margin: -36px -36px 28px -36px;">
+              <div class="window-dots">
+                <span class="window-dot red"></span>
+                <span class="window-dot yellow"></span>
+                <span class="window-dot green"></span>
+              </div>
+              <span>DISPATCH_MESSAGE.EXE</span>
+            </div>
+
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="contactName" class="form-label">YOUR FULL NAME *</label>
+                <input type="text" id="contactName" class="form-input" placeholder="e.g. Maya Sharma / Recruiter at Google" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contactEmail" class="form-label">YOUR EMAIL ADDRESS *</label>
+                <input type="email" id="contactEmail" class="form-input" placeholder="e.g. maya@company.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contactSubject" class="form-label">INQUIRY TYPE</label>
+                <select id="contactSubject" class="form-select">
+                  <option value="internship">💼 Full Stack / Backend Internship Opportunity</option>
+                  <option value="job">🚀 Full-Time Software Engineer / Associate Role</option>
+                  <option value="project">🌐 Freelance / Contract Web Development Project</option>
+                  <option value="hackathon">⚡ Hackathon Collaboration / Mentorship</option>
+                  <option value="chat">☕ Casual Coffee / Tech Chai Chat</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="contactMessage" class="form-label">MESSAGE DETAILS *</label>
+                <textarea id="contactMessage" class="form-textarea" placeholder="Tell Sahil about your project, timeline, tech stack, or opportunity..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn-primary" style="width:100%; justify-content:center; font-size:1.1rem; padding:16px;">
+                <span>💌</span> TRANSMIT MESSAGE PACKET
+              </button>
+            </form>
+          </div>
+
+          <!-- Right Column: Direct Quick Connect Cards -->
+          <div class="contact-quick-cards">
+            
+            <!-- Direct Email -->
+            <div class="quick-connect-card">
+              <div class="quick-connect-info">
+                <h4>DIRECT EMAIL</h4>
+                <p>sahilgite511@gmail.com</p>
+                <span style="font-size:0.75rem; color:var(--accent-mint); font-weight:800; font-family:var(--font-mono);">
+                  ● CHECKED DAILY
+                </span>
+              </div>
+              <div style="display:flex; flex-direction:column; gap:6px;">
+                <button class="copy-btn" onclick="window.copyText('sahilgite511@gmail.com', 'Sahil\'s Email')">
+                  <span>📋</span> COPY
+                </button>
+                <a href="mailto:sahilgite511@gmail.com" class="system-btn" style="text-align:center;">
+                  <span>✉️</span> OPEN
+                </a>
+              </div>
+            </div>
+
+            <!-- Direct Phone -->
+            <div class="quick-connect-card">
+              <div class="quick-connect-info">
+                <h4>DIRECT PHONE</h4>
+                <p>+91 9373782446</p>
+                <span style="font-size:0.75rem; color:var(--accent-yellow); font-weight:800; font-family:var(--font-mono);">
+                  ● CALL &amp; WHATSAPP
+                </span>
+              </div>
+              <div style="display:flex; flex-direction:column; gap:6px;">
+                <button class="copy-btn" onclick="window.copyText('+919373782446', 'Sahil\'s Phone')">
+                  <span>📋</span> COPY
+                </button>
+                <a href="tel:+919373782446" class="system-btn" style="text-align:center;">
+                  <span>📞</span> CALL
+                </a>
+              </div>
+            </div>
+
+            <!-- Location & Availability -->
+            <div class="quick-connect-card" style="background:var(--bg-secondary);">
+              <div class="quick-connect-info">
+                <h4>CURRENT LOCATION</h4>
+                <p>Nashik, Maharashtra, India</p>
+                <span style="font-size:0.75rem; color:var(--accent-pink); font-weight:800; font-family:var(--font-mono);">
+                  [20.00°N, 73.78°E] • OPEN TO RELOCATE
+                </span>
+              </div>
+              <div style="text-align:right;">
+                <span style="background:var(--accent-mint); padding:4px 8px; border:1px solid #000; font-size:0.75rem; font-weight:800; font-family:var(--font-mono);">
+                  OPEN NOW
+                </span>
+              </div>
+            </div>
+
+            <!-- Profiles & Socials -->
+            <div class="brutal-card" style="padding:22px;">
+              <h4 style="font-family:var(--font-display); font-weight:800; font-size:1.05rem; margin-bottom:12px;">
+                PROFESSIONAL NETWORKS
+              </h4>
+              <div style="display:flex; gap:10px; flex-wrap:wrap;">
+                <button class="btn-card highlight" onclick="window.copyText('https://linkedin.com/in/sahilgite', 'LinkedIn Link')">
+                  <span>💼</span> LINKEDIN
+                </button>
+                <button class="btn-card" onclick="window.copyText('https://github.com/sahilgite', 'GitHub Link')">
+                  <span>🐙</span> GITHUB
+                </button>
+                <a href="about.html" class="btn-card">
+                  <span>🎓</span> RESUME BIO
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- INTERACTIVE GUESTBOOK & STICKER STAMP BOARD -->
+        <div class="guestbook-box">
+          <div class="section-header" style="margin-bottom:20px; border-bottom:2px dashed var(--bg-grid);">
+            <div>
+              <div class="section-label">
+                <span>[05.B]</span> COMMUNITY STAMP BOARD
+              </div>
+              <h2 class="section-title" style="font-size:2.2rem;">LEAVE A CUTE STICKER NOTE!</h2>
+            </div>
+            <div class="section-meta-tag" style="background:var(--accent-pink); color:#FFF;">
+              VISITOR GUESTBOOK
+            </div>
+          </div>
+
+          <p style="font-size:0.95rem; color:var(--ink-secondary); margin-bottom:20px;">
+            Drop a quick hello, encouragement, or recruiter note on Sahil's public sticker wall:
+          </p>
+
+          <form id="guestbookForm">
+            <div class="guestbook-input-row">
+              <input type="text" id="guestMsg" class="form-input" placeholder="Type a cute note (e.g., 'Loved your projects!', 'Hiring team at X says hi!')..." required>
+              <input type="text" id="guestName" class="form-input" placeholder="Your Name / Handle" required>
+              <select id="guestEmoji" class="form-select">
+                <option value="⭐">⭐ Star</option>
+                <option value="🚀">🚀 Rocket</option>
+                <option value="💖">💖 Love</option>
+                <option value="☕">☕ Chai</option>
+                <option value="💻">💻 Code</option>
+                <option value="🐱">🐱 Kitty</option>
+              </select>
+            </div>
+            <button type="submit" class="btn-primary" style="margin-bottom:24px;">
+              <span>📌</span> PIN NOTE TO WALL
+            </button>
+          </form>
+
+          <div class="guestbook-pins-container" id="guestbookPins">
+            <!-- Dynamically populated from localStorage -->
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Interactive Sticker Tray Overlay -->
+  <div class="sticker-palette-tray" aria-label="Cute Sticker Palette">
+    <span class="sticker-tray-title">STAMP CUTE:</span>
+    <button class="tray-sticker-btn" data-emoji="⭐" title="Star Sticker">⭐</button>
+    <button class="tray-sticker-btn" data-emoji="💖" title="Heart Sticker">💖</button>
+    <button class="tray-sticker-btn" data-emoji="⚡" title="Lightning Sticker">⚡</button>
+    <button class="tray-sticker-btn" data-emoji="☕" title="Coffee/Chai Sticker">☕</button>
+    <button class="tray-sticker-btn" data-emoji="🚀" title="Rocket Sticker">🚀</button>
+    <button class="tray-sticker-btn" data-emoji="✨" title="Sparkle Sticker">✨</button>
+  </div>
+
+  <!-- Swiss Brutalist Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand">
+          <h3>SAHIL GITE // DEV</h3>
+          <p>
+            Computer Applications post-graduate student at KKWIEER Nashik. Focused on engineering high-impact web software with Swiss structural purity and cute neo-brutalist joy.
+          </p>
+          <div style="display:flex; gap:10px;">
+            <button class="system-btn" onclick="window.copyText('sahilgite511@gmail.com', 'Email')">
+              <span>📧</span> sahilgite511@gmail.com
+            </button>
+            <button class="system-btn" onclick="window.copyText('+919373782446', 'Phone')">
+              <span>📱</span> +91 9373782446
+            </button>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>PAGES</h4>
+          <ul class="footer-nav-list">
+            <li><a href="index.html">[01] Overview (Home)</a></li>
+            <li><a href="about.html">[02] About &amp; Experience</a></li>
+            <li><a href="projects.html">[03] Projects Lab</a></li>
+            <li><a href="achievements.html">[04] Achievements &amp; Awards</a></li>
+            <li><a href="contact.html">[05] Contact &amp; Connect</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>TECH ARSENAL</h4>
+          <ul class="footer-nav-list">
+            <li><span>• React.js &amp; Tailwind</span></li>
+            <li><span>• Node.js &amp; Express.js</span></li>
+            <li><span>• MongoDB &amp; MySQL</span></li>
+            <li><span>• Python &amp; AI Fundamentals</span></li>
+            <li><span>• AWS S3 &amp; Render Cloud</span></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>CONNECT</h4>
+          <ul class="footer-nav-list">
+            <li><a href="https://github.com" target="_blank" rel="noopener">GitHub Profile ↗</a></li>
+            <li><a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn Network ↗</a></li>
+            <li><a href="mailto:sahilgite511@gmail.com">Direct Email ↗</a></li>
+            <li><a href="tel:+919373782446">Direct Call ↗</a></li>
+            <li><a href="contact.html">Guestbook Stamp Board ↗</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div>
+          <span>© 2026 SAHIL GITE. CRAFTED WITH SWISS PRECISION &amp; NEO-BRUTALIST LOVE.</span>
+        </div>
+        <div style="display:flex; gap:16px; align-items:center;">
+          <span>NASHIK, MH [20.00°N, 73.78°E]</span>
+          <a href="#" style="text-decoration:underline;">BACK TO TOP ↑</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

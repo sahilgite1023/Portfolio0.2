@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sahil Gite — Full Stack Developer & AI/Cloud Enthusiast</title>
+  <meta name="description" content="Portfolio of Sahil Gite — Full Stack Developer (React, Node.js, Express, MongoDB, Python). MCA student at KKWIEER Nashik.">
+  <meta name="keywords" content="Sahil Gite, Full Stack Developer, Nashik, Portfolio, MCA KKWIEER, React, Node.js, Brutalism">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220%22%20%220%22%20%22100%22%20%22100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+</head>
+<body>
+
+  <!-- Top System & Ticker Utility Bar -->
+  <aside class="top-system-bar" aria-label="System status bar">
+    <div class="system-ticker-marquee">
+      <div class="system-ticker-item">
+        <span class="pulse-dot"></span> <span>SYS.STATUS: AVAILABLE FOR ROLES & INTERNSHIPS</span>
+      </div>
+      <div class="system-ticker-item">
+        <span>📍 LOCATION: NASHIK, MAHARASHTRA, INDIA [20.00°N, 73.78°E]</span>
+      </div>
+      <div class="system-ticker-item">
+        <span>🎓 EDUCATION: MCA @ KKWIEER (SGPA 8.27)</span>
+      </div>
+      <div class="system-ticker-item">
+        <span>⚡ TECH: REACT • NODE.JS • EXPRESS • MONGO • PYTHON • AWS</span>
+      </div>
+      <div class="system-ticker-item">
+        <span class="pulse-dot"></span> <span>SYS.STATUS: AVAILABLE FOR ROLES & INTERNSHIPS</span>
+      </div>
+    </div>
+
+    <div class="system-actions">
+      <span id="liveClock" style="font-weight:700; color:var(--accent-yellow);">13:20:00 IST</span>
+      <button class="system-btn" id="audioToggleBtn" title="Toggle cute sound effects">
+        <span>🔇</span> SOUND: OFF
+      </button>
+      <button class="system-btn" id="themeToggleBtn" title="Switch theme">
+        <span>🎨</span> ☀️ LIGHT
+      </button>
+    </div>
+  </aside>
+
+  <!-- Main Swiss Header Navigation -->
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="index.html" class="brand-badge" id="brandLogo">
+        <span>SAHIL GITE</span>
+        <span class="brand-stamp">DEV.01</span>
+      </a>
+
+      <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle navigation menu">
+        ☰ MENU
+      </button>
+
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link active">
+              <span class="nav-idx">[01]</span>
+              <span>OVERVIEW</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">
+              <span class="nav-idx">[02]</span>
+              <span>ABOUT & EXP</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="projects.html" class="nav-link">
+              <span class="nav-idx">[03]</span>
+              <span>PROJECTS</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="achievements.html" class="nav-link">
+              <span class="nav-idx">[04]</span>
+              <span>ACHIEVEMENTS</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">
+              <span class="nav-idx">[05]</span>
+              <span>CONTACT</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="nav-cta">
+        <a href="contact.html" class="cta-button" id="navHireMeBtn">
+          <span>(◕‿◕)</span> HIRE ME
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-wrapper">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- Hero Text Column -->
+          <div class="hero-content-col">
+            <div class="hero-badge-tag">
+              <span>●</span> FULL STACK DEVELOPER // AI & CLOUD ENTHUSIAST
+            </div>
+
+            <h1 class="hero-headline">
+              BUILDING <span class="highlight-pink">BOLD</span> &amp; SCALABLE <span class="highlight-mint">SOFTWARE</span> FOR THE WEB.
+            </h1>
+
+            <p class="hero-description">
+              Hello! I'm <strong>Sahil Gite</strong>, a Computer Applications postgraduate student at <strong>KKWIEER Nashik</strong> (SGPA 8.27). I engineer production-ready web applications, craft resilient APIs, and blend Swiss structural precision with vibrant playful design.
+            </p>
+
+            <div class="hero-actions-row">
+              <a href="projects.html" class="btn-primary" id="heroExploreProjectsBtn">
+                <span>🚀</span> EXPLORE MY WORK
+              </a>
+              <button class="btn-secondary" onclick="window.copyText('sahilgite511@gmail.com', 'Sahil\'s Email')" id="heroCopyEmailBtn">
+                <span>📋</span> COPY EMAIL
+              </button>
+            </div>
+
+            <div class="hero-tag-pills">
+              <span class="pill-label">STACK:</span>
+              <span class="tag-pill" style="background:var(--accent-yellow-light);">React.js</span>
+              <span class="tag-pill" style="background:var(--accent-mint-light);">Node.js</span>
+              <span class="tag-pill" style="background:var(--accent-pink-light);">Express.js</span>
+              <span class="tag-pill" style="background:var(--accent-purple-light);">MongoDB</span>
+              <span class="tag-pill" style="background:var(--accent-cyan-light);">MySQL</span>
+              <span class="tag-pill" style="background:var(--accent-orange-light);">Python</span>
+              <span class="tag-pill">AWS S3</span>
+            </div>
+          </div>
+
+          <!-- Hero Avatar & Badges Column -->
+          <div class="hero-avatar-box">
+            <!-- Floating Cute Neo-Brutalist Badges -->
+            <div class="floating-sticker sticker-1" title="Drag me!">
+              (◕‿◕✿) 100% PASSION
+            </div>
+            <div class="floating-sticker sticker-3" title="Drag me!">
+              ⚡ FAST &amp; CLEAN CODE
+            </div>
+            <div class="floating-sticker sticker-2" title="Drag me!">
+              ☕ POWERED BY CHAI
+            </div>
+
+            <div class="avatar-frame">
+              <div class="card-header-bar">
+                <div class="window-dots">
+                  <span class="window-dot red"></span>
+                  <span class="window-dot yellow"></span>
+                  <span class="window-dot green"></span>
+                </div>
+                <span>SAHIL_AVATAR.SYS [VER 2.6]</span>
+              </div>
+              <div class="avatar-image-wrap">
+                <img src="assets/images/sahil_avatar.jpg" alt="Cute Neo-Brutalist Portrait of Sahil Gite" width="600" height="600" loading="eager">
+              </div>
+              <div class="avatar-footer-meta">
+                <div>
+                  <div class="meta-title">Sahil Gite</div>
+                  <div class="meta-subtitle">MCA Candidate @ KKWIEER</div>
+                </div>
+                <div style="text-align:right;">
+                  <span style="background:var(--accent-mint); font-size:0.72rem; padding:3px 8px; font-weight:800; border:1px solid #121316;">
+                    SGPA 8.27
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- 4-Block Swiss Modular Stats Strip -->
+        <div class="stats-strip-grid">
+          <div class="stat-block yellow">
+            <div>
+              <div class="stat-number">8.27</div>
+              <div class="stat-label">MCA SGPA</div>
+            </div>
+            <div class="stat-subtext">KKWIEER, Nashik (2025–Present)</div>
+          </div>
+
+          <div class="stat-block pink">
+            <div>
+              <div class="stat-number">06+</div>
+              <div class="stat-label">Hackathons &amp; Events</div>
+            </div>
+            <div class="stat-subtext">NASA Space Apps, SunHacks, InitHacks</div>
+          </div>
+
+          <div class="stat-block purple">
+            <div>
+              <div class="stat-number">1st</div>
+              <div class="stat-label">Logic Hunt Coding</div>
+            </div>
+            <div class="stat-subtext">1st Prize Winner @ KKWIEER</div>
+          </div>
+
+          <div class="stat-block mint">
+            <div>
+              <div class="stat-number">04</div>
+              <div class="stat-label">Industry Certs</div>
+            </div>
+            <div class="stat-subtext">AWS, MERN, HackerRank, Google UI/UX</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- INTERACTIVE RETRO TERMINAL SECTION -->
+    <section class="section-spacing" style="background: var(--bg-secondary); border-top: var(--border-width) solid var(--border-color); border-bottom: var(--border-width) solid var(--border-color);">
+      <div class="container">
+        
+        <div class="section-header">
+          <div>
+            <div class="section-label">
+              <span>[01.A]</span> INTERACTIVE SYSTEM SHELL
+            </div>
+            <h2 class="section-title">RETRO DEV TERMINAL</h2>
+          </div>
+          <div class="section-meta-tag">
+            STATUS: READY FOR COMMANDS
+          </div>
+        </div>
+
+        <div class="brutal-terminal">
+          <div class="terminal-header">
+            <div style="display:flex; align-items:center; gap:8px;">
+              <div class="window-dots">
+                <span class="window-dot red"></span>
+                <span class="window-dot yellow"></span>
+                <span class="window-dot green"></span>
+              </div>
+              <span class="terminal-title">bash — sahil@portfolio:~ (Interactive CLI)</span>
+            </div>
+            <span style="font-size:0.75rem; color:#A0A5B5;">v2.6-stable</span>
+          </div>
+
+          <div class="terminal-body" id="terminalOutput">
+            <div style="color:var(--accent-yellow); margin-bottom:12px;">
+              ⚡ WELCOME TO SAHIL GITE'S INTERACTIVE CONSOLE v2.6.0
+            </div>
+            <div style="color:#C4B5FD; margin-bottom:12px;">
+              Type any command or click the shortcut chips below to query skills, education, projects, or get a funny joke.
+            </div>
+            <div style="color:#A0A5B5; margin-bottom:16px;">
+              Try typing: <strong style="color:var(--accent-mint);">skills</strong>, <strong style="color:var(--accent-mint);">projects</strong>, <strong style="color:var(--accent-mint);">education</strong>, <strong style="color:var(--accent-mint);">cat</strong>, or <strong style="color:var(--accent-mint);">help</strong>
+            </div>
+          </div>
+
+          <div style="padding: 12px 24px; border-top: 1px solid #323542; background: #181920;">
+            <div class="terminal-prompt-line" style="margin-top:0;">
+              <span class="terminal-prompt-user">sahil@portfolio:~$</span>
+              <input type="text" id="terminalInput" class="terminal-input" placeholder="Type a command (e.g. skills, projects, contact, joke) and press Enter..." autocomplete="off" spellcheck="false">
+            </div>
+
+            <div class="terminal-suggestions">
+              <span style="font-size:0.75rem; color:#8E93A6; align-self:center;">Shortcuts:</span>
+              <button class="terminal-suggestion-chip" data-cmd="skills">skills</button>
+              <button class="terminal-suggestion-chip" data-cmd="projects">projects</button>
+              <button class="terminal-suggestion-chip" data-cmd="education">education</button>
+              <button class="terminal-suggestion-chip" data-cmd="experience">experience</button>
+              <button class="terminal-suggestion-chip" data-cmd="achievements">achievements</button>
+              <button class="terminal-suggestion-chip" data-cmd="cat resume.txt">cat resume.txt</button>
+              <button class="terminal-suggestion-chip" data-cmd="cat">cat</button>
+              <button class="terminal-suggestion-chip" data-cmd="joke">joke</button>
+              <button class="terminal-suggestion-chip" data-cmd="clear">clear</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS SPOTLIGHT SECTION -->
+    <section class="section-spacing">
+      <div class="container">
+        
+        <div class="section-header">
+          <div>
+            <div class="section-label">
+              <span>[01.B]</span> FEATURED BUILDS
+            </div>
+            <h2 class="section-title">PRODUCTION HIGHLIGHTS</h2>
+          </div>
+          <a href="projects.html" class="section-meta-tag" style="text-decoration:none; display:inline-flex; align-items:center; gap:6px;">
+            <span>VIEW ALL WORKS</span> <span>→</span>
+          </a>
+        </div>
+
+        <div class="projects-grid">
+          
+          <!-- Project 01: CareerNova -->
+          <article class="project-card">
+            <div class="card-header-bar">
+              <div class="window-dots">
+                <span class="window-dot red"></span>
+                <span class="window-dot yellow"></span>
+                <span class="window-dot green"></span>
+              </div>
+              <span>PROJECT // 001</span>
+            </div>
+            <div class="project-thumbnail">
+              <span class="project-category-tag">FULL STACK • LIVE</span>
+              <img src="assets/images/project_careernova.jpg" alt="CareerNova Job Portal UI Screenshot" width="800" height="450" loading="lazy">
+            </div>
+            <div class="project-content">
+              <div class="project-title">
+                <span>CareerNova</span>
+                <span style="font-size:1.1rem;">💼</span>
+              </div>
+              <div class="project-role">Full Stack Developer — End-to-End Portal</div>
+              <p class="project-desc">
+                Full-stack job portal covering candidate onboarding, application lifecycle tracking, resume parsing, and employer dashboard. Built with secure JWT authentication and AWS S3 cloud storage for high-availability resume management.
+              </p>
+              <ul class="project-feature-list">
+                <li class="project-feature-item">Secure JWT-based authentication &amp; role authorization</li>
+                <li class="project-feature-item">Integrated AWS S3 cloud bucket for reliable resume storage</li>
+                <li class="project-feature-item">Full admin management dashboard for job postings &amp; applicants</li>
+                <li class="project-feature-item">Deployed on Render (Backend) and Netlify (Frontend)</li>
+              </ul>
+              <div class="project-tech-tags">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Express.js</span>
+                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">JWT</span>
+                <span class="tech-tag">AWS S3</span>
+                <span class="tech-tag">Multer</span>
+              </div>
+              <div class="project-actions">
+                <a href="projects.html#careernova" class="btn-card highlight">
+                  <span>🔎</span> DEEP DIVE SPECS
+                </a>
+                <button class="btn-card" onclick="window.copyText('https://github.com/sahilgite', 'GitHub Repo')">
+                  <span>📂</span> REPO
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 02: Employee Attendance System -->
+          <article class="project-card">
+            <div class="card-header-bar">
+              <div class="window-dots">
+                <span class="window-dot red"></span>
+                <span class="window-dot yellow"></span>
+                <span class="window-dot green"></span>
+              </div>
+              <span>PROJECT // 002</span>
+            </div>
+            <div class="project-thumbnail">
+              <span class="project-category-tag">BACKEND &amp; CLOUD • LIVE</span>
+              <img src="assets/images/project_attendance.jpg" alt="Employee Attendance System Dashboard UI Screenshot" width="800" height="450" loading="lazy">
+            </div>
+            <div class="project-content">
+              <div class="project-title">
+                <span>Attendance &amp; Leave System</span>
+                <span style="font-size:1.1rem;">⏱️</span>
+              </div>
+              <div class="project-role">Backend Developer — High Reliability System</div>
+              <p class="project-desc">
+                Robust enterprise attendance and leave tracking engine. Implemented role-based dashboards (Admin, Manager, Employee), SQL-driven automated holiday/leave calculations, and secure audit logging deployed on DigitalOcean.
+              </p>
+              <ul class="project-feature-list">
+                <li class="project-feature-item">Role-based dashboards and fine-grained access control</li>
+                <li class="project-feature-item">Automated leave request approval &amp; balance calculation pipelines</li>
+                <li class="project-feature-item">Optimized SQL database queries for fast attendance reporting</li>
+                <li class="project-feature-item">Production deployment on DigitalOcean Droplet</li>
+              </ul>
+              <div class="project-tech-tags">
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">SQL</span>
+                <span class="tech-tag">Express.js</span>
+                <span class="tech-tag">Tailwind CSS</span>
+                <span class="tech-tag">DigitalOcean</span>
+              </div>
+              <div class="project-actions">
+                <a href="projects.html#attendance" class="btn-card highlight">
+                  <span>🔎</span> DEEP DIVE SPECS
+                </a>
+                <button class="btn-card" onclick="window.copyText('https://github.com/sahilgite', 'GitHub Repo')">
+                  <span>📂</span> REPO
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CORE TECHNICAL MATRIX -->
+    <section class="section-spacing" style="background: var(--bg-secondary); border-top: var(--border-width) solid var(--border-color);">
+      <div class="container">
+        
+        <div class="section-header">
+          <div>
+            <div class="section-label">
+              <span>[01.C]</span> TECHNICAL CAPABILITIES
+            </div>
+            <h2 class="section-title">SKILLS &amp; TOOLKIT</h2>
+          </div>
+          <div class="section-meta-tag">
+            STACK: MERN + PYTHON + CLOUD
+          </div>
+        </div>
+
+        <div class="skills-matrix-grid">
+          
+          <!-- Category 1: Languages -->
+          <div class="skill-category-card">
+            <div class="skill-icon-header">🐍 ⚡</div>
+            <h3 class="skill-category-title">Languages</h3>
+            <ul class="skill-list">
+              <li>
+                <div class="skill-item-row">
+                  <span>JavaScript (ES6+)</span>
+                  <span style="color:var(--accent-pink);">90%</span>
+                </div>
+                <div class="skill-bar-outer">
+                  <div class="skill-bar-inner" style="width:90%; background:var(--accent-yellow);"></div>
+                </div>
+              </li>
+              <li>
+                <div class="skill-item-row">
+                  <span>Python</span>
+                  <span style="color:var(--accent-pink);">85%</span>
+                </div>
+                <div class="skill-bar-outer">
+                  <div class="skill-bar-inner" style="width:85%; background:var(--accent-mint);"></div>
+                </div>
+              </li>
+              <li>
+                <div class="skill-item-row">
+                  <span>HTML5 &amp; Modern CSS</span>
+                  <span style="color:var(--accent-pink);">95%</span>
+                </div>
+                <div class="skill-bar-outer">
+                  <div class="skill-bar-inner" style="width:95%; background:var(--accent-purple);"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Category 2: Technologies & Frameworks -->
+          <div class="skill-category-card">
+            <div class="skill-icon-header">⚛️ 🌐</div>
+            <h3 class="skill-category-title">Frontend &amp; Backend</h3>
+            <ul class="skill-list">
+              <li>
+                <div class="skill-item-row">
+                  <span>React.js</span>
+                  <span style="color:var(--accent-pink);">88%</span>
+                </div>
+                <div class="skill-bar-outer">
+                  <div class="skill-bar-inner" style="width:88%; background:var(--accent-cyan);"></div>
+                </div>
+              </li>
+              <li>
+                <div class="skill-item-row">
+                  <span>Node.js &amp; Express</span>
+                  <span style="color:var(--accent-pink);">90%</span>
+                </div>
+                <div class="skill-bar-outer">
+                  <div class="skill-bar-inner" style="width:90%; background:var(--accent-mint);"></div>
+                </div>
+              </li>
+              <li>
+                <div class="skill-item-row">
+                  <span>Tailwind CSS</span>
+                  <span style="color:var(--accent-pink);">92%</span>
+                </div>
+                <div class="skill-bar-outer">
+                  <div class="skill-bar-inner" style="width:92%; background:var(--accent-pink);"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Category 3: Databases -->
+          <div class="skill-category-card">
+            <div class="skill-icon-header">💾 🗄️</div>
+            <h3 class="skill-category-title">Databases</h3>
+            <ul class="skill-list">
+              <li>
+                <div class="skill-item-row">
+                  <span>MongoDB (NoSQL)</span>
+                  <span style="color:var(--accent-pink);">88%</span>
+                </div>
+                <div class="skill-bar-outer">
+                  <div class="skill-bar-inner" style="width:88%; background:var(--accent-mint);"></div>
+                </div>
+              </li>
+              <li>
+                <div class="skill-item-row">
+                  <span>MySQL (Relational)</span>
+                  <span style="color:var(--accent-pink);">85%</span>
+                </div>
+                <div class="skill-bar-outer">
+                  <div class="skill-bar-inner" style="width:85%; background:var(--accent-orange);"></div>
+                </div>
+              </li>
+              <li>
+                <div class="skill-item-row">
+                  <span>Data Modeling &amp; Auth</span>
+                  <span style="color:var(--accent-pink);">88%</span>
+                </div>
+                <div class="skill-bar-outer">
+                  <div class="skill-bar-inner" style="width:88%; background:var(--accent-yellow);"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Category 4: Tools & Cloud -->
+          <div class="skill-category-card">
+            <div class="skill-icon-header">☁️ 🚀</div>
+            <h3 class="skill-category-title">Cloud &amp; DevOps</h3>
+            <ul class="skill-list">
+              <li>
+                <div class="skill-item-row">
+                  <span>Git &amp; GitHub</span>
+                  <span style="color:var(--accent-pink);">92%</span>
+                </div>
+                <div class="skill-bar-outer">
+                  <div class="skill-bar-inner" style="width:92%; background:var(--accent-purple);"></div>
+                </div>
+              </li>
+              <li>
+                <div class="skill-item-row">
+                  <span>AWS (S3 &amp; Cloud Basics)</span>
+                  <span style="color:var(--accent-pink);">80%</span>
+                </div>
+                <div class="skill-bar-outer">
+                  <div class="skill-bar-inner" style="width:80%; background:var(--accent-yellow);"></div>
+                </div>
+              </li>
+              <li>
+                <div class="skill-item-row">
+                  <span>Render, Netlify, DigitalOcean</span>
+                  <span style="color:var(--accent-pink);">88%</span>
+                </div>
+                <div class="skill-bar-outer">
+                  <div class="skill-bar-inner" style="width:88%; background:var(--accent-cyan);"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CALL TO ACTION BANNER -->
+    <section class="section-spacing">
+      <div class="container">
+        <div class="brutal-card" style="background:var(--accent-yellow); padding: 48px; text-align:center; transform:none;">
+          <div style="font-family:var(--font-mono); font-weight:800; font-size:0.9rem; margin-bottom:12px;">
+            [READY TO COLLABORATE?]
+          </div>
+          <h2 style="font-family:var(--font-display); font-size:clamp(2rem, 5vw, 3.4rem); font-weight:800; letter-spacing:-1px; margin-bottom:20px; line-height:1.1;">
+            LOOKING FOR A TALENTED DEVELOPER WHO CAN SHIP FAST?
+          </h2>
+          <p style="font-size:1.1rem; max-width:640px; margin:0 auto 32px; color:#27272A; font-weight:500;">
+            Whether you have an internship opening, full-time junior/associate developer role, or an ambitious project — let's build something remarkable together.
+          </p>
+          <div style="display:flex; justify-content:center; gap:16px; flex-wrap:wrap;">
+            <a href="contact.html" class="btn-primary" style="background:var(--ink); color:#FFF; box-shadow: 4px 4px 0px var(--accent-pink);">
+              <span>💌</span> SEND A MESSAGE
+            </a>
+            <a href="about.html" class="btn-secondary" style="background:#FFF;">
+              <span>👀</span> READ MY STORY
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Interactive Sticker Tray Overlay -->
+  <div class="sticker-palette-tray" aria-label="Cute Sticker Palette">
+    <span class="sticker-tray-title">STAMP CUTE:</span>
+    <button class="tray-sticker-btn" data-emoji="⭐" title="Star Sticker">⭐</button>
+    <button class="tray-sticker-btn" data-emoji="💖" title="Heart Sticker">💖</button>
+    <button class="tray-sticker-btn" data-emoji="⚡" title="Lightning Sticker">⚡</button>
+    <button class="tray-sticker-btn" data-emoji="☕" title="Coffee/Chai Sticker">☕</button>
+    <button class="tray-sticker-btn" data-emoji="🚀" title="Rocket Sticker">🚀</button>
+    <button class="tray-sticker-btn" data-emoji="✨" title="Sparkle Sticker">✨</button>
+  </div>
+
+  <!-- Swiss Brutalist Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand">
+          <h3>SAHIL GITE // DEV</h3>
+          <p>
+            Computer Applications post-graduate student at KKWIEER Nashik. Focused on engineering high-impact web software with Swiss structural purity and cute neo-brutalist joy.
+          </p>
+          <div style="display:flex; gap:10px;">
+            <button class="system-btn" onclick="window.copyText('sahilgite511@gmail.com', 'Email')">
+              <span>📧</span> sahilgite511@gmail.com
+            </button>
+            <button class="system-btn" onclick="window.copyText('+919373782446', 'Phone')">
+              <span>📱</span> +91 9373782446
+            </button>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>PAGES</h4>
+          <ul class="footer-nav-list">
+            <li><a href="index.html">[01] Overview (Home)</a></li>
+            <li><a href="about.html">[02] About &amp; Experience</a></li>
+            <li><a href="projects.html">[03] Projects Lab</a></li>
+            <li><a href="achievements.html">[04] Achievements &amp; Awards</a></li>
+            <li><a href="contact.html">[05] Contact &amp; Connect</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>TECH ARSENAL</h4>
+          <ul class="footer-nav-list">
+            <li><span>• React.js &amp; Tailwind</span></li>
+            <li><span>• Node.js &amp; Express.js</span></li>
+            <li><span>• MongoDB &amp; MySQL</span></li>
+            <li><span>• Python &amp; AI Fundamentals</span></li>
+            <li><span>• AWS S3 &amp; Render Cloud</span></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>CONNECT</h4>
+          <ul class="footer-nav-list">
+            <li><a href="https://github.com" target="_blank" rel="noopener">GitHub Profile ↗</a></li>
+            <li><a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn Network ↗</a></li>
+            <li><a href="mailto:sahilgite511@gmail.com">Direct Email ↗</a></li>
+            <li><a href="tel:+919373782446">Direct Call ↗</a></li>
+            <li><a href="contact.html">Guestbook Stamp Board ↗</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div>
+          <span>© 2026 SAHIL GITE. CRAFTED WITH SWISS PRECISION &amp; NEO-BRUTALIST LOVE.</span>
+        </div>
+        <div style="display:flex; gap:16px; align-items:center;">
+          <span>NASHIK, MH [20.00°N, 73.78°E]</span>
+          <a href="#" style="text-decoration:underline;">BACK TO TOP ↑</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/terminal.js"></script>
+</body>
+</html>
