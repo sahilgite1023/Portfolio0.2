@@ -217,10 +217,27 @@
     const toggle = document.getElementById('mobileNavToggle');
     const links = document.getElementById('navLinks');
     if (toggle && links) {
-      toggle.addEventListener('click', () => {
+      toggle.addEventListener('click', (e) => {
+        e.stopPropagation();
         links.classList.toggle('mobile-open');
         playCuteSound('click');
         toggle.textContent = links.classList.contains('mobile-open') ? '✕ CLOSE' : '☰ MENU';
+      });
+
+      // Close menu when tapping a link
+      links.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+          links.classList.remove('mobile-open');
+          toggle.textContent = '☰ MENU';
+        });
+      });
+
+      // Close menu when tapping outside header
+      document.addEventListener('click', (e) => {
+        if (!e.target.closest('.site-header') && links.classList.contains('mobile-open')) {
+          links.classList.remove('mobile-open');
+          toggle.textContent = '☰ MENU';
+        }
       });
     }
   }
